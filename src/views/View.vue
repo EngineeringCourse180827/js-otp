@@ -18,11 +18,11 @@
                     .then(response => {
                         console.log(response)
                         this.result = response.data.entries[0].API;
-                        // this.$toasted.show(response.data.entries[0].Link, {
-                        //     type: 'info',
-                        //     position: 'bottom-center',
-                        //     duration: 2000
-                        // })
+                        this.$toasted.show(response.data.entries[0].Link, {
+                            type: 'info',
+                            position: 'bottom-center',
+                            duration: 2000
+                        })
                     })
                     // .catch(err => {
                     //     console.log(err)
